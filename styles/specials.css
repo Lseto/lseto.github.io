@@ -1,0 +1,138 @@
+@charset "ISO-8859-1";
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+    background: #bbc4ef;/*lavender*/
+}
+
+#main-nav a {
+  color: #9966ff;/*dark purple*/
+  background: #fccdd3;/*light pink*/
+  height: 25px;
+  font-family: sans-serif,Arial, Helvetica;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+#main-nav a:hover {
+  background-color: #ffe6ff;/*lighter pink*/
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px;
+}
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.arrow {
+  margin-left: 8px;
+  color: white;
+  font-size: 12px;
+}
+/*FOOTER*/
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    margin-top:20px;
+    color:#9966ff;/*dark purple*/
+    background-color:#fccdd3;/*light pink*/
+}
+/*====SECTION====*/
+.main {
+	padding: 50px;
+	background: #bbc4ef;/*lavender*/
+}
+.cupcakes{
+    		display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, minmax(100px, auto));
+			grid-gap: 10px;
+}
+.cupcakes {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.card {
+    display: flex;
+    background:white;
+    margin:5px;
+    padding:5px;
+    border:5px dotted pink;
+    text-align: center;
+    justify-content: center;
+    
+}
+.one{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+.two{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+.three{
+    grid-column:2/3;
+    grid-row:3/4;
+}
+
+
+.month {
+	text-transform: uppercase;
+	color: purple;
+}
+
+.cupcakes h2 {
+	grid-column: 2;
+	grid-row: 1;
+	padding-top: .5em;
+	align-self: flex-end;
+}
+
+.meta {
+	grid-column: 2;
+	grid-row: 2;
+	padding-bottom: 1em;
+}
+
+
+        

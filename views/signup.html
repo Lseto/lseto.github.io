@@ -1,0 +1,84 @@
+<!doctype <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../styles/signup.css" />
+        <script src="main.js"></script>
+    </head>
+        <body>
+        <!--==========NAV============-->
+        <nav id="main-nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+      
+            <li><a href="about.html">About<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li><a href="about.html">Our History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </li>
+            <li><a href="cupcake_gallery.html">Cupcakes<span class="arrow">&#x25BC;</span></a>
+                <ul class="submenu">
+                    <li><a href="cupcake_gallery.html">Flavors</a></li>
+                    <li><a href="specials.html">Monthly Specials</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html">Sign Up</a></li> 
+        </ul>
+        </nav>
+  <!--==============SECTION============-->
+  <section>
+			<form>
+				<h2>Sign Up</h2>
+				<div class="input">
+                    <input id="if_invalid"type="text" name="username"placeholder="Username"pattern="^\w{5,20}$" title="5-20 characters long and can contain numbers"><br>
+                </div>
+                <div class="input">    
+                    <input id="if_invalid" type="password" name="password"placeholder="Choose your password"pattern=".{8,20}"><br>
+                </div>
+                <div class="input">
+                    <input id="if_invalid"type="password" name="confirmpassword" 
+                    placeholder="Confirm Password"pattern=".{8,20}"><br>
+                </div>
+                <div class="input">  
+                    <input id="if_invalid" type="email" name="email" 
+                    placeholder="Email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+                </div> 
+                <div class="input">
+                    <input type="text" name="fname" pattern="[a-zA-Z\s]"
+                    placeholder="FirstName"title="Name should only contain letters. e.g. Lily">
+                </div>
+                <div class="input">
+                    <input type="text" name="lname" pattern="[a-zA-Z\s]"
+                    placeholder="LastName"title="Name should only contain letters. e.g. Lily"><br>
+				</div>				
+					<!-- Gender drop down -->
+					<select name ="gender">
+					<!-- to disable gender being selected -->
+						<option value=""disabled selected>Gender</option>
+						<option value ="male">Male</option>
+						<option value ="female">Female</option>
+					</select><br>
+					<!-- 2 check boxes -->
+					
+					<p><input type="checkbox" name="terms" value="terms"><br>
+					 <span>I agree with terms and conditions</span>
+					</p>
+					<input type="checkbox" name="news" value="news"><br>
+					<label for="news"></label><span>I would like to receive the news and offers</span><br>
+					<!-- sign up button -->
+					<button type="submit" class="btn">Sign Up</button>	
+			</form>
+  </section>
+
+  <!--==============FOOTER==============-->
+  <footer>
+    <p>Cupcakes Delight, Copyright &copy;2019</p>
+  </footer>
+  <script src="../scripts/signup.js"></script>
+</body>    
+</html>

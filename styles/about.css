@@ -1,0 +1,141 @@
+@charset "ISO-8859-1";
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+    background: #bbc4ef;/*lavender*/
+}
+
+#main-nav a {
+  color: #9966ff;/*dark purple*/
+  background: #fccdd3;/*light pink*/
+  height: 25px;
+  font-family: sans-serif,Arial, Helvetica;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+#main-nav a:hover {
+  background-color: #ffe6ff;/*lighter pink*/
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px;
+}
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.arrow {
+  margin-left: 8px;
+  color: white;
+  font-size: 12px;
+}
+/*FOOTER*/
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    margin-top:20px;
+    color:#9966ff;/*dark purple*/
+    background-color:#fccdd3;/*light pink*/
+}
+/*====ABOUT====*/
+html,body{
+	background: #bbc4ef;/*lavender*/
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	line-height: 1.8;
+}
+h1 {
+	font: 1.6em sans-serif;
+    margin-bottom: .4em;
+    color:purple;
+	
+}
+h2 {
+	font: 3.2em  serif;
+    margin-bottom: .2em;
+    color:purple;
+}
+h3 {
+	font-size: 1.2em;
+}
+p {
+	margin-bottom: 1em;
+}
+
+table {
+    background:white;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top: 1em;
+}
+
+td {
+	border: 1px solid black;
+	padding: .5em;
+}
+th {
+	border: 1px solid black;
+	border-bottom: 3px solid black;
+	padding: 1em .5em .5em;
+}
+/*ELEMENTS TO ANIMATE//*/
+.cookie{
+	animation-name:drive;
+	animation-duration:3s;
+}
+/*//KEYFRAMES//*/
+
+@keyframes drive{
+	from{/*move from left to right*/
+	transform:translateX(0)
+	}
+	to{transform:translateX(700px)
+	
+	}
+}     

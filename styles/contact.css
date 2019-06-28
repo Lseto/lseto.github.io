@@ -1,0 +1,154 @@
+@charset "ISO-8859-1";
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    background: #bbc4ef;/*lavender*/
+}
+
+#main-nav a {
+  color: #9966ff;/*dark purple*/
+  background: #fccdd3;/*light pink*/
+  height: 25px;
+  font-family: sans-serif,Arial, Helvetica;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+#main-nav a:hover {
+  background-color: #ffe6ff;/*lighter pink*/
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px;
+}
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.arrow {
+  margin-left: 8px;
+  color: white;
+  font-size: 12px;
+}
+/*FOOTER*/
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    margin-top:20px;
+    color:#9966ff;/*dark purple*/
+    background-color:#fccdd3;/*light pink*/
+}
+/*====CONTACT US====*/
+
+
+section { font-size: 16px; 
+        font-family: inherit; 
+     }
+section{
+ 	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, minmax(100px, auto));
+	grid-gap: 10px;/*for the spaces between the grids*/
+	max-width: 960px;
+	margin: 0 auto;  		
+}
+form{
+    margin-top:100px;
+    grid-column:2/3;
+    grid-row:1/4;
+}
+form#contact{
+    max-width:800px; 
+    padding:50px;
+    border-radius: 12px;
+    background:url(../images/swirl.png);
+    background:cover;
+   
+}
+
+form#contact h2{
+    margin:0px;
+    color:purple;
+    font-size:2em;
+}
+
+form#contact h3{
+    margin:-5px 0px 12px 0px; color:purple; font-size:1.2em;
+}
+form#contact h4{
+    margin:15px 0px 3px 0px; color:purple;font-size:1em;
+}
+form#contact p, #formsignup label{
+    margin:0px 0px 6px 0px; color:rgba(255, 255,255,.8);
+}
+/*field set and legend style*/
+form#contact fieldset{
+    border:1px solid rgba(255,255,255,.4);
+    margin:15px 0px 15px 0px;
+    padding:0px 10px 10px 20px;
+}
+
+/*textarea*/
+form#contact textarea{
+    font-size:.9em;
+    padding:5px;
+    border:none;
+    color:black;
+    background-color:rgba(255,255,255,.8);
+    width:80%;
+}
+form#contact textarea:focus{
+    background-color:white;
+}
+/*select menu*/
+form#contact select{
+    -webkit-appearance: none;/*reset the appearance*/
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance:none;
+    font-size:.9em;
+    background:#588fd0 url(images/icons_arrows.svg)no-repeat right 8px;
+    background-size:30px 20px;
+    color:#ffd34c;
+    padding:7px 45px 7px 10px;
+    border:1px solid black;
+}
+
+        
